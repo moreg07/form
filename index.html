@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+<style>
+    body{
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        background-color: rgba(0, 0, 0, 0.558);
+       }
+    .container{
+        max-width: 600px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border-radius: 5px;
+        }
+    .container .title{
+        font-size:25px;
+        position: relative;
+        }
+    .content form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 25px;
+        }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 18px);
+        margin-bottom: 11px;
+        }    
+    .user-details .input-box input{
+        height: 35px;
+        width: 100%;
+        font-size: 15px;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+        }
+   
+    form .all-button{
+        height: 40px;
+        margin: 75px 
+        }
+    form .all-button button{
+        height: 90%;
+        width: 40%;
+        border-radius: 7px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 1px;
+        background-color: #00000090;
+        margin-left: 140px;
+       } 
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+      <div class="title">Registration</div>
+       
+        <div class="content">
+
+            <form action="submit.html">
+ 
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <label class="details">Full Name</label>
+                        <input type="text" id="full" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">Username</label>
+                        <input type="text" id="use" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">Phone Number</label>
+                        <input type="number" id="phn" placeholder="Enter your number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">City</label>
+                        <input type="text" id="city" placeholder="Enter your city" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">State</label>
+                        <input type="text" id="state" placeholder="Enter your state" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">Password</label>
+                        <input type="password" id="pass" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">Confirm Password</label>
+                        <input type="password" id="cpass" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+
+                    <div class="all-button">
+                        <button type="submit">Submit</button> <br><br>
+                        <button type="reset">Reset</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>    
+    </div>     
+</body>
+</html>
